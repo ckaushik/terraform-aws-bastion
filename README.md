@@ -73,6 +73,7 @@ for usage instructions.
 | region                | The region into which to deploy the bastion                       | -       | yes      |
 | vpc_id                | The ID of the VPC the bastion should be deployed into             | -       | yes      |
 | subnet_ids            | The IDs of the subnets the bastion should deploy into             | -       | yes      |
+| service               | The service the bastion is deployed with.                         | -       | yes      |
 | component             | The name of this component                                        | -       | yes      |
 | deployment_identifier | An identifier for this instantiation                              | -       | yes      |
 | ami                   | The ID of the AMI for the bastion instances                       | -       | yes      |
