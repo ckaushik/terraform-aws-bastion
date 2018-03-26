@@ -54,6 +54,12 @@ resource "aws_autoscaling_group" "bastion" {
   }
 
   tag {
+    key = "Service"
+    value = "${var.service}"
+    propagate_at_launch = true
+  }
+
+  tag {
     key = "Component"
     value = "${var.component}"
     propagate_at_launch = true
@@ -66,7 +72,7 @@ resource "aws_autoscaling_group" "bastion" {
   }
 
   tag {
-    key = "Role"
+    key = "ServerRole"
     value = "bastion"
     propagate_at_launch = true
   }

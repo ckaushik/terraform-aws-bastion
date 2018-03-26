@@ -8,14 +8,15 @@ variable "subnet_ids" {
   description = "The IDs of the subnets the bastion should deploy into."
   type = "list"
 }
-
+variable "service" {
+  description = "The service the bastion is deployed with."
+}
 variable "component" {
   description = "The name of this component."
 }
 variable "deployment_identifier" {
   description = "An identifier for this instantiation."
 }
-
 variable "ami" {
   description = "The ID of the AMI for the bastion instances."
 }
